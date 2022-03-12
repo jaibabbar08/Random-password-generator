@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Karla:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .container {
+            position: absolute;
+            width: 550px;
+            height: 550px;
+            /* left: 642px; */
+            /* top: 64px; */
+            background: #1F2937;
+            /* background: #ECFDF5; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #box {
+            position: absolute;
+            width: 354px;
+            height: 80px;
+            left: 52px;
+            top: 118px;
+            /* border: 1px solid white; */
+            /* font-family: karla; */
+            font-family: 'Karla';
+            font-style: normal;
+            font-weight: 800px;
+            font-size: 40px;
+            line-height: 40px;
+            /* or 100% */
+
+            letter-spacing: -0.025em;
+
+            /* white */
+
+            color: #FFFFFF;
+            /* font-family: Karla, sans-serif; */
+
+
+
+        }
+
+        #supptxt {
+            position: absolute;
+            height: 28px;
+            left: 52px;
+            width: 372px;
+
+            top: 208px;
+
+            /* text-xl/leading-7/font-normal */
+            font-style: normal;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 400;
+            /* identical to box height, or 140% */
+            line-height: 28px;
+
+            /* border: 1px solid white; */
+
+            /* Medium grey */
+            color: #D5D4D8;
+        }
+
+        #greenbox {
+            /* Button */
+
+
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 9px 17px 9px 15px;
+
+            position: absolute;
+            width: 223px;
+            height: 42px;
+            left: 52px;
+            top: 287px;
+            font-weight: bolder;
+
+            background: #10B981;
+            /* shadow/sm */
+            color: white;
+
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+        }
+
+        #txt1 {
+            /* Text */
+
+
+            position: static;
+            width: 159px;
+            height: 24px;
+            left: 47px;
+            top: 9px;
+
+            /* text-base/leading-6/font-medium */
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+
+            /* white */
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 0px 12px;
+        }
+
+        #line {
+            position: absolute;
+            width: 446px;
+            height: 0px;
+            left: 52px;
+            top: 364px;
+
+            border: 1px solid rgb(49, 49, 90);
+        }
+
+        #inputbox1 {
+            position: absolute;
+            width: 211px;
+            height: 39px;
+            left: 52px;
+            top: 399px;
+
+            background: #273549;
+            border-radius: 6px;
+        }
+
+        #inputbox2 {
+            position: absolute;
+            width: 211px;
+            height: 39px;
+            left: 287px;
+            top: 399px;
+
+            background: #273549;
+            border-radius: 6px;
+        }
+
+        #inputbox3 {
+            position: absolute;
+            width: 211px;
+            height: 39px;
+            left: 52px;
+            top: 465px;
+
+            background: #273549;
+            border-radius: 6px;
+
+        }
+
+        #inputbox4 {
+            position: absolute;
+            width: 211px;
+            height: 39px;
+            left: 287px;
+            top: 465px;
+
+            background: #273549;
+            border-radius: 6px;
+        }
+
+        #textfeild1 {
+            /* position: absolute; */
+            width: 180px;
+            height: 32px;
+            left: 67px;
+            top: 403px;
+            padding: 3px 2px 2px 2px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+
+            text-align: center;
+
+            color: #55F991;
+        }
+
+        #textfeild2 {
+            /* position: absolute; */
+            width: 192px;
+            height: 32px;
+            left: 297px;
+            top: 403px;
+            padding: 3px 2px 2px 2px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+
+            text-align: center;
+
+            color: #55F991;
+
+        }
+
+        #textfeild3 {
+            /* position: absolute; */
+            width: 180px;
+            height: 32px;
+            left: 67px;
+            top: 469px;
+            padding: 3px 2px 2px 2px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+
+            text-align: center;
+
+            color: #55F991;
+
+        }
+
+        #textfeild4 {
+            /* position: absolute; */
+            width: 192px;
+            height: 32px;
+            left: 297px;
+            top: 679px;
+            /* padding-top: 2px; */
+            padding: 3px 2px 2px 2px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+
+            text-align: center;
+            color: #55F991;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <p id="txt1">hii</p> 
+        <p id="txt2">hello</p>
+        <p id="txt3">hola</p>
+        <p id="txt4">bano</p> -->
+        <div id="box">
+            Generate a <br> <span style="color: #10B981;">random password</span>
+        </div>
+
+        <div id="supptxt">
+            Never use an insecure password again.
+        </div>
+
+        <button style="border: 0px solid transparent;cursor: pointer;" id="greenbox" onclick="showpass()">
+            <p id="txt1">Generate passwords</p>
+        </button>
+
+        <div id="line">
+
+        </div>
+
+        <div id="inputbox1">
+            <div id="textfeild1">
+                <!-- hol -->
+            </div>
+
+        </div>
+
+        <div id="inputbox2">
+            <div id="textfeild2">
+                <!-- hiii -->
+            </div>
+        </div>
+
+        <div id="inputbox3">
+            <div id="textfeild3">
+                <!-- hello -->
+            </div>
+
+        </div>
+
+        <div id="inputbox4">
+            <div id="textfeild4">
+                <!-- bano -->
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- <button id="btn" onclick="showpass()">play</button> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
